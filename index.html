@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monad Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>🔍 Monad 区块链仪表盘</h1>
+
+  <section id="blockInfoSection">
+    <h2>🧱 最新区块</h2>
+    <div id="blockInfo">加载中...</div>
+  </section>
+
+  <section id="statsSection">
+    <h2>📊 网络状态</h2>
+    <div class="stat-cards">
+      <div class="card">活跃地址数：<strong>1293</strong></div>
+      <div class="card">平均 Gas：<strong>11.2 Gwei</strong></div>
+      <div class="card">总交易数：<strong>234,567</strong></div>
+    </div>
+  </section>
+
+  <section id="chartSection">
+    <h2>📈 每日交易量（模拟）</h2>
+    <canvas id="txChart" width="600" height="300"></canvas>
+  </section>
+
+  <section id="txListSection">
+    <h2>📋 最新交易（模拟）</h2>
+    <table>
+      <thead>
+        <tr><th>Tx Hash</th><th>From</th><th>To</th><th>金额</th></tr>
+      </thead>
+      <tbody id="txList">
+        <tr><td>0xabc...123</td><td>0x111...</td><td>0x999...</td><td>1.23 MON</td></tr>
+        <tr><td>0xdef...456</td><td>0xaaa...</td><td>0xbbbb...</td><td>0.5 MON</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
